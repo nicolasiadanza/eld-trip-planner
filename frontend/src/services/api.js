@@ -8,7 +8,15 @@ const api = axios.create({
 })
 
 export const createTrip = async (tripData) => {
-  const response = await api.post('/api/trips/', tripData)
+  // Asegurarse de que los datos estén en snake_case
+  const formattedTripData = {
+    current_location: tripData.currentLocation,
+    pickup_location: tripData.pickupLocation,
+    dropoff_location: tripData.dropoffLocation,
+    current_cycle_used: tripData.currentCycleUsed
+  };
+
+  const response = await api.post('/api/trips/', formattedTripData)
   return response.data
 }
 
