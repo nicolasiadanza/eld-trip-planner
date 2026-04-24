@@ -16,6 +16,7 @@ const ELDLogPage = ({ logSheet }) => {
 
       // Draw header text at top
       ctx.font = 'bold 16px Arial';
+      ctx.fillStyle = '#1e293b'; // Dark color for text
       ctx.fillText('ELD Daily Log Sheet', 10, 30);
       ctx.textAlign = 'right';
       ctx.fillText(`Date: ${logSheet.date}`, width - 10, 30);
@@ -64,7 +65,7 @@ const ELDLogPage = ({ logSheet }) => {
         off_duty: '#e5e7eb',
         sleeper: '#bfdbfe',
         driving: '#86efac',
-        on_duty: '#fde68a'
+        on_duty: '#f59e0b'
       };
 
       // Draw activity periods
@@ -84,6 +85,7 @@ const ELDLogPage = ({ logSheet }) => {
 
       // Draw totals at bottom
       ctx.font = '14px Arial';
+      ctx.fillStyle = '#1e293b'; // Dark color for text
       ctx.fillText(`Off Duty: ${logSheet.log_data.total_off_duty}h | Sleeper: ${logSheet.log_data.total_sleeper}h | Driving: ${logSheet.log_data.total_driving}h | On Duty: ${logSheet.log_data.total_on_duty}h | Total: 24h`, 10, height - 10);
     }
   }, [logSheet]);
