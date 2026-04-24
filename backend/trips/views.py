@@ -8,7 +8,10 @@ from .serializers import TripSerializer, TripInputSerializer
 from .services.route_service import geocode_location, get_full_route
 from .services.hos_calculator import calculate_trip_plan
 from .services.log_generator import generate_log_sheets
+from django.utils.decorators import method_decorator
+from django.views.decorators.csrf import csrf_exempt
 
+@method_decorator(csrf_exempt, name="dispatch")
 class TripCreateView(APIView):
     def post(self, request):
         serializer = TripInputSerializer(data=request.data)
