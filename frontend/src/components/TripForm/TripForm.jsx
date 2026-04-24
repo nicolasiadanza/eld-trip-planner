@@ -63,7 +63,7 @@ const TripForm = ({ onSubmit, isLoading }) => {
           onChange={(e) => setCurrentCycleUsed(e.target.value)}
         />
       </div>
-      <button type="button" onClick={handleSubmit} disabled={isLoading} className="submit-btn">
+      <button type="submit" disabled={isLoading} className="submit-btn">
         {isLoading ? 'Planning Trip...' : 'Plan My Trip 🚛'}
       </button>
     </form>

@@ -16,7 +16,7 @@ export const createTrip = async (tripData) => {
     current_cycle_used: tripData.currentCycleUsed
   };
 
-  const response = await api.post('/api/trips/', formattedTripData)
+  const response = await api.post('/api/trips/', tripData)
   return response.data
 }
 
