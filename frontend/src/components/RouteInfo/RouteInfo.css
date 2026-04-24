@@ -1,0 +1,80 @@
+.route-info {
+  background-color: white;
+  border-radius: 12px;
+  padding: 20px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+.summary-section {
+  display: flex;
+  gap: 16px;
+  margin-bottom: 20px;
+}
+
+.stat-card {
+  flex: 1;
+  background-color: #f8fafc;
+  border-radius: 8px;
+  padding: 16px;
+  text-align: center;
+}
+
+.stat-card h3 {
+  color: #64748b;
+  font-size: 0.85rem;
+  margin: 0 0 8px;
+}
+
+.stat-card p {
+  color: #1e293b;
+  font-size: 1.4rem;
+  font-weight: 700;
+  margin: 0;
+}
+
+.stop-list {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+
+.stop-item {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  padding: 10px 0;
+  border-bottom: 1px solid #f1f5f9;
+  flex-wrap: wrap;
+}
+
+.stop-item .icon {
+  font-size: 1.2rem;
+  flex-shrink: 0;
+}
+
+.stop-item .location-name {
+  font-weight: 600;
+  color: #1e293b;
+  flex: 1;
+  min-width: 120px;
+}
+
+.stop-item .arrival-time {
+  color: #64748b;
+  font-size: 0.8rem;
+  white-space: nowrap;
+}
+
+.stop-item .duration-hours {
+  color: #374151;
+  font-size: 0.85rem;
+  white-space: nowrap;
+}
+
+.badge {
+  color: white;
+  padding: 2px 8px;
+  border-radius: 12px;
+  font-size: 0.75rem;
+  white-space: nowrap;
+}

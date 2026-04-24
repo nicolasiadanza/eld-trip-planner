@@ -1,0 +1,53 @@
+body {
+  background-color: #f1f5f9;
+  min-height: 100vh;
+}
+
+.app {
+  max-width: 1400px;
+  margin: auto;
+  padding: 24px;
+}
+
+.app-header {
+  text-align: center;
+  margin-bottom: 32px;
+}
+
+.app-header h1 {
+  font-size: 2.5rem;
+  color: #1e293b;
+}
+
+.app-header p {
+  color: #64748b;
+  font-size: 1.1rem;
+}
+
+.main-content {
+  display: grid;
+  grid-template-columns: 380px 1fr;
+  gap: 24px;
+  align-items: start;
+}
+
+.left-panel {
+  position: sticky;
+  top: 24px;
+}
+
+.right-panel {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+
+@media (max-width: 768px) {
+  .main-content {
+    grid-template-columns: 1fr;
+  }
+}
+
+.map-container {
+  min-height: 400px;
+}
