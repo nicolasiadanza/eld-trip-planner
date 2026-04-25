@@ -1,5 +1,8 @@
 # 🚛 ELD Trip Planner
 
+## 🎬 Demo Video
+[Watch Demo on Loom](https://www.loom.com/share/784f953813a347998f0c0069d1eef517)
+
 ## Live Demo
 - **App:** [https://eld-trip-planner-brown.vercel.app/](https://eld-trip-planner-brown.vercel.app/)
 - **API:** [https://eld-trip-planner-mx8r.onrender.com/api/health/](https://eld-trip-planner-mx8r.onrender.com/api/health/)
